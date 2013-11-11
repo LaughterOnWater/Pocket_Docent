@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript">
+		var $container = $('#container');
+		// initialize
+		$container.masonry({
+		  columnWidth: 100,
+		  itemSelector: '.item'
+		});
+		document.addEventListener("deviceready", onDeviceReady, false);
+ 
+		function onDeviceReady() {
+		document.addEventListener("backbutton", handleBackButton, true);
+		}
+		 
+		function handleBackButton() {
+		console.log("back clicked");
+		window.history.back();
+		}    
+	</script>
+        <link href="assets/css/jquery.mobile.structure-1.3.2.css" rel="stylesheet" type="text/css">
+        <link href="themes/BearHollowZoo.css" rel="stylesheet">
+    </head>
+    
+    <body>
+    <!-- Begin New Page
+    		
+            Animals
+    
+    -->
+        <div data-role="page" id="venues" data-theme="c" data-title="Venues">
+            <div data-role="header" data-position="fixed" data-theme="c">
+                <h1>Pocket Docent</h1>
+<a data-role="button" data-icon="back" data-rel="back" id="go-back" data-iconpos="notext" data-theme="c">Back</a>
+            </div>
+            <div data-role="content">
+            <h1>Venues</h1>
+                <div class="masonry-outer">
+        <div class="masonry js-masonry"  data-masonry-options='{ "columnWidth": 100 }'>
+          <div class="item w3 h2">
+            <div class="item-inner dark-magenta"><a href="#reptilehouse"><br>
+            Reptile House<br>
+<img src="img/faq-icon.png" width="60" height="60" alt="Reptile House"> </a></div></div>
+          <div class="item h2">
+            <div class="item-inner dark-green"><a href="#entrance" rel="external">Entrance<br>
+<img src="img/faq-icon.png" width="60" height="60" alt="Entrance"></a> </div></div>
+          <div class="item w2">
+            <div class="item-inner dark-indigo"><a href="#amphitheatre" rel="external">Amphitheatre<br>
+          &nbsp;<img src="img/faq-icon.png" width="60" height="60" alt="Amphitheatre"></a></div></div>
+          <div class="item w2 h2">
+            <div class="item-inner dark-mustard"><a href="#educationcenter" rel="external"><br>
+            Education Center<br>
+          <img src="img/faq-icon.png" width="60" height="60" alt="Education Center"> </a></div></div>
+          <div class="item"></div>
+          <div class="item w2">
+            <div class="item-inner dark-blue"><a href="#exerciseyard">Exercise Yard<br>
+          <img src="img/faq-icon.png" width="60" height="60" alt="Exercise Yard"> </a></div></div>
+          <div class="item w2">
+            <div class="item-inner dark-red"><a href="#playground"> Playground<br>
+          <img src="img/faq-icon.png" width="60" height="60" alt="Playground"></a> </div></div>
+          <div class="item w2">
+            <div class="item-inner dark-orange"><a href="#restrooms">Restrooms<br>
+          <img src="img/faq-icon.png" width="60" height="60" alt="Restrooms"></a></div></div>
+        </div>
+      </div>
+            </div>
+            <div data-role="footer" class="nav-bhz" data-position="fixed" data-theme="c">
+              <div data-role="navbar" class="nav-bhz" data-grid="b">
+                <ul>
+                  <li><a href="index.htm" id="go-home" data-icon="custom" rel="external">Home</a></li>
+                  <li><a href="venues.htm" rel="external" id="go-animals" data-icon="custom">Venues</a></li>
+                  <li><a href="map.htm" rel="external" id="go-map" data-icon="custom">Map</a></li>
+                </ul>
+              </div>
+              <!-- /navbar -->
+            </div>
+        </div>
+    <!-- Begin New Page
+    		
+            Reptile House
+    
+    -->
+    <div data-role="page" id="reptilehouse" data-theme="c" data-title="Reptile House">
+            <div data-role="header" data-position="fixed" data-theme="c">
+                <h1>Pocket Docent</h1>
+<a data-role="button" data-icon="back" data-rel="back" id="go-back" data-iconpos="notext" data-theme="c">Back</a>
+            </div>
+            <div data-role="content">
+				<div class="rounded-rect-c">
+				  <h1><img src="img/faq-icon.png" width="60" height="60" alt="beavers">Reptile House</h1>
+				  <div class="rounded-rect-inner">
+				    <p>Nunc pulvinar laoreet turpis. Integer nunc metus, tempus suscipit lacus   non, cursus volutpat lectus. Cras at lectus adipiscing, bibendum mauris   suscipit, posuere odio. Praesent quis dolor pharetra, elementum ipsum   at, dictum ipsum. Aenean vitae pulvinar lacus. </p>
+                    <p>Quisque tempor, tortor   vitae aliquam bibendum, lectus odio venenatis leo, eu tristique neque   erat sit amet dui. Maecenas aliquet congue dolor, sed elementum turpis   luctus nec. Aenean imperdiet, mi nec euismod eleifend, magna enim luctus   elit, in suscipit diam lectus vitae quam. </p>
+                    <p>Maecenas a lobortis orci. Nam   ac sem diam. Curabitur faucibus tincidunt sem eget mattis. Pellentesque   tincidunt rutrum tristique. </p>
+                  </div>
+				</div>
+            </div>
+            <div data-role="footer" class="nav-bhz" data-position="fixed" data-theme="c">
+              <div data-role="navbar" class="nav-bhz" data-grid="b">
+                <ul>
+                  <li><a href="index.htm" id="go-home" data-icon="custom" rel="external">Home</a></li>
+                  <li><a href="venues.htm" rel="external" id="go-animals" data-icon="custom">Venues</a></li>
+                  <li><a href="map.htm" rel="external" id="go-map" data-icon="custom">Map</a></li>
+                </ul>
+              </div>
+              <!-- /navbar -->
+            </div>
+        </div>
+    <!-- Begin New Page
+    		
+            Entrance
+    
+    -->
+    <div data-role="page" id="entrance" data-theme="c" data-title="Entrance">
+            <div data-role="header" data-position="fixed" data-theme="c">
+                <h1>Pocket Docent</h1>
+<a data-role="button" data-icon="back" data-rel="back" id="go-back" data-iconpos="notext" data-theme="c">Back</a>
+            </div>
+            <div data-role="content">
+				<div class="rounded-rect-c">
+				  <h1><img src="img/faq-icon.png" width="60" height="60" alt="alligators"> Entrance</h1>
+				  <div class="rounded-rect-inner">
+				  <div class="img-radius"></div>  <p>Nunc pulvinar laoreet turpis. Integer nunc metus, tempus suscipit lacus   non, cursus volutpat lectus. Cras at lectus adipiscing, bibendum mauris   suscipit, posuere odio. Praesent quis dolor pharetra, elementum ipsum   at, dictum ipsum. Aenean vitae pulvinar lacus. </p>
+				    <p>Quisque tempor, tortor   vitae aliquam bibendum, lectus odio venenatis leo, eu tristique neque   erat sit amet dui. Maecenas aliquet congue dolor, sed elementum turpis   luctus nec. Aenean imperdiet, mi nec euismod eleifend, magna enim luctus   elit, in suscipit diam lectus vitae quam. </p>
+				    <p>Maecenas a lobortis orci. Nam   ac sem diam. Curabitur faucibus tincidunt sem eget mattis. Pellentesque   tincidunt rutrum tristique. </p>
+				  </div>
+				</div>
+            </div>
+            <div data-role="footer" class="nav-bhz" data-position="fixed" data-theme="c">
+              <div data-role="navbar" class="nav-bhz" data-grid="b">
+                <ul>
+                  <li><a href="index.htm" id="go-home" data-icon="custom" rel="external">Home</a></li>
+                  <li><a href="venues.htm" rel="external" id="go-animals" data-icon="custom">Venues</a></li>
+                  <li><a href="map.htm" rel="external" id="go-map" data-icon="custom">Map</a></li>
+                </ul>
+              </div>
+              <!-- /navbar -->
+            </div>
+        </div>
+    <!-- Begin New Page
+    		
+            Deer
+    
+    -->
+    <div data-role="page" id="amphitheatre" data-theme="c" data-title="Amphitheatre">
+            <div data-role="header" data-position="fixed" data-theme="c">
+                <h1>Pocket Docent</h1>
+<a data-role="button" data-icon="back" data-rel="back" id="go-back" data-iconpos="notext" data-theme="c">Back</a>
+            </div>
+            <div data-role="content">
+				<div class="rounded-rect-c">
+				  <h1><img src="img/faq-icon.png" width="60" height="60" alt="Deer"> Amphitheatre</h1>
+				  <div class="rounded-rect-inner">
+				  <div class="img-radius"></div>  <p>Nunc pulvinar laoreet turpis. Integer nunc metus, tempus suscipit lacus   non, cursus volutpat lectus. Cras at lectus adipiscing, bibendum mauris   suscipit, posuere odio. Praesent quis dolor pharetra, elementum ipsum   at, dictum ipsum. Aenean vitae pulvinar lacus. </p>
+				    <p>Quisque tempor, tortor   vitae aliquam bibendum, lectus odio venenatis leo, eu tristique neque   erat sit amet dui. Maecenas aliquet congue dolor, sed elementum turpis   luctus nec. Aenean imperdiet, mi nec euismod eleifend, magna enim luctus   elit, in suscipit diam lectus vitae quam. </p>
+				    <p>Maecenas a lobortis orci. Nam   ac sem diam. Curabitur faucibus tincidunt sem eget mattis. Pellentesque   tincidunt rutrum tristique. </p>
+				  </div>
+				</div>
+            </div>
+            <div data-role="footer" class="nav-bhz" data-position="fixed" data-theme="c">
+              <div data-role="navbar" class="nav-bhz" data-grid="b">
+                <ul>
+                  <li><a href="index.htm" id="go-home" data-icon="custom" rel="external">Home</a></li>
+                  <li><a href="venues.htm" rel="external" id="go-animals" data-icon="custom">Venues</a></li>
+                  <li><a href="map.htm" rel="external" id="go-map" data-icon="custom">Map</a></li>
+                </ul>
+              </div>
+              <!-- /navbar -->
+            </div>
+        </div>
+    <!-- Begin New Page
+    		
+            Turkeys
+    
+    -->
+    <div data-role="page" id="educationcenter" data-theme="c" data-title="Education Center">
+            <div data-role="header" data-position="fixed" data-theme="c">
+                <h1>Pocket Docent</h1>
+<a data-role="button" data-icon="back" data-rel="back" id="go-back" data-iconpos="notext" data-theme="c">Back</a>
+            </div>
+            <div data-role="content">
+				<div class="rounded-rect-c">
+				  <h1><img src="img/faq-icon.png" width="60" height="60" alt="Education Center"> Education Center</h1>
+				  <div class="rounded-rect-inner">
+				  <div class="img-radius"></div>  <p>Nunc pulvinar laoreet turpis. Integer nunc metus, tempus suscipit lacus   non, cursus volutpat lectus. Cras at lectus adipiscing, bibendum mauris   suscipit, posuere odio. Praesent quis dolor pharetra, elementum ipsum   at, dictum ipsum. Aenean vitae pulvinar lacus. </p>
+				    <p>Quisque tempor, tortor   vitae aliquam bibendum, lectus odio venenatis leo, eu tristique neque   erat sit amet dui. Maecenas aliquet congue dolor, sed elementum turpis   luctus nec. Aenean imperdiet, mi nec euismod eleifend, magna enim luctus   elit, in suscipit diam lectus vitae quam. </p>
+				    <p>Maecenas a lobortis orci. Nam   ac sem diam. Curabitur faucibus tincidunt sem eget mattis. Pellentesque   tincidunt rutrum tristique. </p>
+				  </div>
+				</div>
+            </div>
+            <div data-role="footer" class="nav-bhz" data-position="fixed" data-theme="c">
+              <div data-role="navbar" class="nav-bhz" data-grid="b">
+                <ul>
+                  <li><a href="index.htm" id="go-home" data-icon="custom" rel="external">Home</a></li>
+                  <li><a href="venues.htm" rel="external" id="go-animals" data-icon="custom">Venues</a></li>
+                  <li><a href="map.htm" rel="external" id="go-map" data-icon="custom">Map</a></li>
+                </ul>
+              </div>
+              <!-- /navbar -->
+            </div>
+        </div>
+    <!-- Begin New Page
+    		
+            Bobcats
+    
+    -->
+    <div data-role="page" id="exerciseyard" data-theme="c" data-title="Exercise Yard">
+            <div data-role="header" data-position="fixed" data-theme="c">
+                <h1>Pocket Docent</h1>
+<a data-role="button" data-icon="back" data-rel="back" id="go-back" data-iconpos="notext" data-theme="c">Back</a>
+            </div>
+            <div data-role="content">
+				<div class="rounded-rect-c">
+				  <h1><img src="img/faq-icon.png" width="60" height="60" alt="Exercise Yard">Exercise Yard</h1>
+				  <div class="rounded-rect-inner">
+				  <div class="img-radius"></div>  <p>Nunc pulvinar laoreet turpis. Integer nunc metus, tempus suscipit lacus   non, cursus volutpat lectus. Cras at lectus adipiscing, bibendum mauris   suscipit, posuere odio. Praesent quis dolor pharetra, elementum ipsum   at, dictum ipsum. Aenean vitae pulvinar lacus. </p>
+				    <p>Quisque tempor, tortor   vitae aliquam bibendum, lectus odio venenatis leo, eu tristique neque   erat sit amet dui. Maecenas aliquet congue dolor, sed elementum turpis   luctus nec. Aenean imperdiet, mi nec euismod eleifend, magna enim luctus   elit, in suscipit diam lectus vitae quam. </p>
+				    <p>Maecenas a lobortis orci. Nam   ac sem diam. Curabitur faucibus tincidunt sem eget mattis. Pellentesque   tincidunt rutrum tristique. </p>
+				  </div>
+				</div>
+            </div>
+            <div data-role="footer" class="nav-bhz" data-position="fixed" data-theme="c">
+              <div data-role="navbar" class="nav-bhz" data-grid="b">
+                <ul>
+                  <li><a href="index.htm" id="go-home" data-icon="custom" rel="external">Home</a></li>
+                  <li><a href="venues.htm" rel="external" id="go-animals" data-icon="custom">Venues</a></li>
+                  <li><a href="map.htm" rel="external" id="go-map" data-icon="custom">Map</a></li>
+                </ul>
+              </div>
+              <!-- /navbar -->
+            </div>
+        </div>
+    <!-- Begin New Page
+    		
+            Bears
+    
+    -->
+    <div data-role="page" id="playground" data-theme="c" data-title="Playground">
+            <div data-role="header" data-position="fixed" data-theme="c">
+                <h1>Pocket Docent</h1>
+<a data-role="button" data-icon="back" data-rel="back" id="go-back" data-iconpos="notext" data-theme="c">Back</a>
+            </div>
+            <div data-role="content">
+				<div class="rounded-rect-c">
+				  <h1><img src="img/faq-icon.png" width="60" height="60" alt="Playground"> Playground</h1>
+				  <div class="rounded-rect-inner">
+				 <div class="img-radius"></div>   <p>Nunc pulvinar laoreet turpis. Integer nunc metus, tempus suscipit lacus   non, cursus volutpat lectus. Cras at lectus adipiscing, bibendum mauris   suscipit, posuere odio. Praesent quis dolor pharetra, elementum ipsum   at, dictum ipsum. Aenean vitae pulvinar lacus. </p>
+				    <p>Quisque tempor, tortor   vitae aliquam bibendum, lectus odio venenatis leo, eu tristique neque   erat sit amet dui. Maecenas aliquet congue dolor, sed elementum turpis   luctus nec. Aenean imperdiet, mi nec euismod eleifend, magna enim luctus   elit, in suscipit diam lectus vitae quam. </p>
+				    <p>Maecenas a lobortis orci. Nam   ac sem diam. Curabitur faucibus tincidunt sem eget mattis. Pellentesque   tincidunt rutrum tristique. </p>
+				  </div>
+				</div>
+            </div>
+            <div data-role="footer" class="nav-bhz" data-position="fixed" data-theme="c">
+              <div data-role="navbar" class="nav-bhz" data-grid="b">
+                <ul>
+                  <li><a href="index.htm" id="go-home" data-icon="custom" rel="external">Home</a></li>
+                  <li><a href="venues.htm" rel="external" id="go-animals" data-icon="custom">Venues</a></li>
+                  <li><a href="map.htm" rel="external" id="go-map" data-icon="custom">Map</a></li>
+                </ul>
+              </div>
+              <!-- /navbar -->
+            </div>
+        </div>
+    <!-- Begin New Page
+    		
+            Vultures
+    
+    -->
+    <div data-role="page" id="restrooms" data-theme="c" data-title="Restrooms">
+            <div data-role="header" data-position="fixed" data-theme="c">
+                <h1>Pocket Docent</h1>
+<a data-role="button" data-icon="back" data-rel="back" id="go-back" data-iconpos="notext" data-theme="c">Back</a>
+            </div>
+            <div data-role="content">
+				<div class="rounded-rect-c">
+				  <h1><img src="img/faq-icon.png" width="60" height="60" alt="Restrooms"> Restrooms</h1>
+				  <div class="rounded-rect-inner">
+				  <div class="img-radius"></div>  <p>Nunc pulvinar laoreet turpis. Integer nunc metus, tempus suscipit lacus   non, cursus volutpat lectus. Cras at lectus adipiscing, bibendum mauris   suscipit, posuere odio. Praesent quis dolor pharetra, elementum ipsum   at, dictum ipsum. Aenean vitae pulvinar lacus. </p>
+				    <p>Quisque tempor, tortor   vitae aliquam bibendum, lectus odio venenatis leo, eu tristique neque   erat sit amet dui. Maecenas aliquet congue dolor, sed elementum turpis   luctus nec. Aenean imperdiet, mi nec euismod eleifend, magna enim luctus   elit, in suscipit diam lectus vitae quam. </p>
+				    <p>Maecenas a lobortis orci. Nam   ac sem diam. Curabitur faucibus tincidunt sem eget mattis. Pellentesque   tincidunt rutrum tristique. </p>
+				  </div>
+				</div>
+            </div>
+            <div data-role="footer" class="nav-bhz" data-position="fixed" data-theme="c">
+              <div data-role="navbar" class="nav-bhz" data-grid="b">
+                <ul>
+                  <li><a href="index.htm" id="go-home" data-icon="custom" rel="external">Home</a></li>
+                  <li><a href="venues.htm" rel="external" id="go-animals" data-icon="custom">Venues</a></li>
+                  <li><a href="map.htm" rel="external" id="go-map" data-icon="custom">Map</a></li>
+                </ul>
+              </div>
+              <!-- /navbar -->
+            </div>
+        </div>
+<script type="text/javascript">
+	var msnry = $container.data('masonry');
+	$("#go-back").click(function(){
+		history.back();
+	});    
+</script>
+    </body>
+
+</html>
