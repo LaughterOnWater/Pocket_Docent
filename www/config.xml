@@ -4,18 +4,18 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "li.low.hol.bear"
-        version   = "0.1.0">
+        version   = "0.2.0">
 
-    <name>Pocket Docent - Bear Hollow Zoo</name>
+    <name>Pocket Docent</name>
 
     <description>
         Learn what's happening at Bear Hollow Zoo.
 		- zoo hours and rules
 		- animals
-		- exhibits
+		- map
+		- venues
 		- events
 		- news
-		- map
     </description>
 
     <author href="http://pocketdocent.low.li" email="team@pocketdocent.low.li">
