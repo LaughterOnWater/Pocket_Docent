@@ -144,6 +144,19 @@ html, body {
 	background-color: #E1E80C;
 }
 
+.goldenrod {
+	background-color: #FFD200;
+}
+
+.electricblue {
+	background-color: #0D66FF;
+}
+
+.red {
+	background-color: #CC0033;
+}
+
+
 
 .rounded-rect {
 	margin: 1em auto;
@@ -159,6 +172,25 @@ html, body {
 	background: -ms-linear-gradient(top,  rgba(0,153,79,1) 0%,rgba(0,68,16,1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(0,153,79,1) 0%,rgba(0,68,16,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00994f', endColorstr='#004410',GradientType=0 ); /* IE6-9 */
+	-moz-box-shadow: 10px 10px 15px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 510px 10px 15px rgba(0,0,0,0.7);	
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.7);
+}
+
+.rounded-rect-b {
+	margin: 1em auto;
+	width: 95%;
+	padding: 0.5em 1em;
+	text-align: center;
+	border-radius: .5em;
+	background: rgb(251,208,108); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(251,208,108,1) 0%, rgba(224,176,81,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(251,208,108,1)), color-stop(100%,rgba(224,176,81,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(251,208,108,1) 0%,rgba(224,176,81,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(251,208,108,1) 0%,rgba(224,176,81,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(251,208,108,1) 0%,rgba(224,176,81,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(251,208,108,1) 0%,rgba(224,176,81,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbd06c', endColorstr='#e0b051',GradientType=0 ); /* IE6-9 */
 	-moz-box-shadow: 10px 10px 15px rgba(0,0,0,0.7);
 	-webkit-box-shadow: 510px 10px 15px rgba(0,0,0,0.7);	
 	box-shadow: 10px 10px 15px rgba(0,0,0,0.7);
@@ -208,7 +240,14 @@ html, body {
 
 
 
-#map { position: absolute; height: 100%; width: 100%; background-color: #FFFFFF; }
+#map {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #FFFFFF;
+	top: 45px;
+	bottom: 55px;
+}
 .olImageLoadError {  display: none !important; }
 
 #map-page .ui-content {
@@ -220,6 +259,7 @@ html, body {
 #go-home .ui-icon { background:  url(../../img/home-icon-mini.png) no-repeat; background-size: 17px 13px; }
 #go-animals .ui-icon { background:  url(../../img/bear-track-mini.png) no-repeat; background-size: 17px 15px;  }
 #go-map .ui-icon { background:  url(../../img/map-pin-icon-mini.png) no-repeat;  background-size: 11px 17px; }
+#locate .ui-icon { background: url(images/locate.png) no-repeat;  background-size: 18px 18px; }
 
 .img-radius {
 	border: 2px solid white;
@@ -231,4 +271,47 @@ html, body {
 	height: 84px;
 	margin: 1em auto;
 	background-image:url(../../img/example-photo.jpg)
+}
+
+
+#navigation {
+    bottom: 15px;
+    left: 15px;
+    position: absolute;
+    z-index: 1000;
+}
+
+#navigation .ui-btn-inner {
+	height: 40px;
+}
+
+.leaflet-popup-content {
+	color: #020;
+}
+
+
+.leaflet-left .leaflet-control {
+    margin-left: 16px;
+}
+.leaflet-top .leaflet-control {
+    margin-top: 16px;
+}
+
+.leaflet-bar a, .leaflet-bar a:hover {
+    height: 42px;
+    line-height: 42px;
+    width: 42px;
+	font-size: 3em;
+}
+
+#popupMenu .ui-slider-switch {
+    margin: -0.5em 0.5em;
+    top: 0;
+    width: 6.8em;
+}
+
+.ui-body-b .masonry .item .item-inner a {
+    color: #FFF;
+    text-decoration: none;
+	text-shadow: none;
 }
