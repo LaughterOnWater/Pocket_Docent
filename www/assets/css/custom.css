@@ -315,3 +315,23 @@ html, body {
     text-decoration: none;
 	text-shadow: none;
 }
+
+.floaty-list {
+
+}
+
+.floaty-list .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, 
+.floaty-list .ui-li-static.ui-li-has-thumb {
+    min-height: 59px;
+    padding-left: 75px;
+}
+
+.leaflet-popup-content p,
+.leaflet-popup-content h3,
+.leaflet-popup-content h2 {
+    margin: 0;
+}
+
+.leaflet-popup-content {
+	text-shadow: none;	
+}
