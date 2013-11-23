@@ -181,13 +181,13 @@ marker_playground.bindPopup("<h3>Playground</h3>");
 //     alert(e.latlng);
 // });
 
-	map.panTo(new L.LatLng(40.737, -73.923));
+	// map.panTo(new L.LatLng(40.737, -73.923));
 	
     
-    map.on('locationfound', onLocationFound);
-    map.on('locationerror', onLocationError);
+    // map.on('locationfound', onLocationFound);
+    // map.on('locationerror', onLocationError);
     
-    map.locate({setView: true, maxZoom: 20});  
+    // map.locate({setView: true, maxZoom: 20});  
 	
 	map.setView([33.927106, -83.387013], 18)
 	document.getElementById('map').style.display = 'block';
