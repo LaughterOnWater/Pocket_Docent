@@ -335,3 +335,7 @@ html, body {
 .leaflet-popup-content {
 	text-shadow: none;	
 }
+
+.fixit{
+	clear: both;
+}

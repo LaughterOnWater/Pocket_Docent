@@ -18,12 +18,10 @@ setTimeout(function(){	// set up the map
 		attribution: '&copy; <a href="http://osm.org/copyright">OSM</a>',
     }).addTo(map);
 	
+	var	imageUrl = 'img/overlays/bearhollow_specifics.png',
+		imageBounds = [[33.92554604074667, -83.38874369859695], [33.92839476009533, -83.3853104710579]];
 
-	L.imageOverlay( 
-		imageUrl = 'img/overlays/BearHollow_specifics.png',
-		imageBounds = [[33.92554604074667, -83.38874369859695], [33.92839476009533, -83.3853104710579]],
-		setOpacity = .5
-	).addTo(map);
+	L.imageOverlay(imageUrl,imageBounds).addTo(map);
 
 // Pin Types:	
 	var mainPin = L.icon({
