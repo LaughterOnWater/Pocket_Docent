@@ -288,7 +288,7 @@ function onZoomend(){
 
 
 // Uncommenting  this line causes map to render properly
-	 map.invalidateSize();
+	// map.invalidateSize();
 	}, 1);
 
 });
