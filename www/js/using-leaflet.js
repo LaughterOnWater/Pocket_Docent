@@ -1,6 +1,6 @@
 $(document).on('pageinit', '#map-page', function(){  
 setTimeout(function(){	// set up the map
-    var map = L.map('map', {drawControl: true});
+    var map = L.map('map', {zoomControl:true});
 	
 	//var map = L.map('map', {drawControl: true}).setView([51.505, -0.09], 13);
     
@@ -9,7 +9,7 @@ setTimeout(function(){	// set up the map
 	// L.tileLayer('img/tiles/{z}/{x}/{y}.png', {
 		minZoom: 13,
         maxZoom: 20,
-		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+		// attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
 	L.tileLayer('img/tiles/{z}/{x}/{y}.png', {
@@ -22,6 +22,7 @@ setTimeout(function(){	// set up the map
 		imageBounds = [[33.92554604074667, -83.38874369859695], [33.92839476009533, -83.3853104710579]];
 
 	L.imageOverlay(imageUrl,imageBounds).addTo(map);
+
 
 // Pin Types:	
 	var mainPin = L.icon({
@@ -187,8 +188,22 @@ marker_playground.bindPopup("<h3>Playground</h3>");
     
     // map.locate({setView: true, maxZoom: 20});  
 	
-	map.setView([33.927106, -83.387013], 18)
+	map.setView([33.927106, -83.387013], 17)
 	document.getElementById('map').style.display = 'block';
+	
+	
+// add location control to global name space for testing only
+// on a production site, omit the "lc = "!
+lc = L.control.locate({
+	follow: true
+}).addTo(map);
+
+map.on('startfollowing', function() {
+    map.on('dragstart', lc.stopFollowing);
+}).on('stopfollowing', function() {
+    map.off('dragstart', lc.stopFollowing);
+});
+
 
 // Uncommenting  this line causes map to render properly
 	// map.invalidateSize();
@@ -208,3 +223,5 @@ function onLocationFound(e) {
 function onLocationError(e) {
     alert(e.message);
 }
+
+

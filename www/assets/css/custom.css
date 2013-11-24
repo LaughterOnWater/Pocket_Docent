@@ -289,19 +289,31 @@ html, body {
 	color: #020;
 }
 
+/* Leaflet zoom and pan control styles for touch screens  */
 
-.leaflet-left .leaflet-control {
-    margin-left: 16px;
-}
-.leaflet-top .leaflet-control {
-    margin-top: 16px;
+.leaflet-touch .leaflet-control-pan {
+  width: 89px;
+  height: 119px;
 }
 
-.leaflet-bar a, .leaflet-bar a:hover {
-    height: 42px;
-    line-height: 42px;
-    width: 42px;
-	font-size: 3em;
+.leaflet-touch .leaflet-control-pan a {
+  width: 27px;
+  height: 27px;
+}
+
+.leaflet-touch .leaflet-control-pan-up-wrap {
+  left:26px;
+}
+.leaflet-touch .leaflet-control-pan-left-wrap {
+  top:40px;
+}
+.leaflet-touch .leaflet-control-pan-right-wrap {
+  left:52px;
+  top:40px;
+}
+.leaflet-touch .leaflet-control-pan-down-wrap {
+  left:26px;
+  top:80px;
 }
 
 #popupMenu .ui-slider-switch {
@@ -339,3 +351,4 @@ html, body {
 .fixit{
 	clear: both;
 }
+
