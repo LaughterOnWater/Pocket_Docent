@@ -9,13 +9,13 @@ setTimeout(function(){	// set up the map
 	// L.tileLayer('img/tiles/{z}/{x}/{y}.png', {
 		minZoom: 13,
         maxZoom: 20,
-		// attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+		attribution: '&copy; <a href="http://osm.org/copyright">OSM</a>',
     }).addTo(map);
 
 	L.tileLayer('img/tiles/{z}/{x}/{y}.png', {
 		minZoom: 16,
         maxZoom: 20,
-		attribution: '&copy; <a href="http://osm.org/copyright">OSM</a>',
+		// attribution: '&copy; <a href="http://osm.org/copyright">OSM</a>',
     }).addTo(map);
 	
 	var	imageUrl = 'img/overlays/bearhollow_specifics.png',
