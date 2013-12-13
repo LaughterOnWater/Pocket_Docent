@@ -282,10 +282,10 @@ var LayerNineteen = new L.LayerGroup();
 // Using L.Control.Locate.js plugin for leaflet
 // add location control to global name space for testing only
 // on a production site, omit the "lc = "!
-var lc = L.control.locate({
+lc = L.control.locate({
 	follow: true,
 	stopFollowingOnDrag: true,
-	enableHighAccuracy: true,
+	// enableHighAccuracy: true,
 	watch: true
 }).addTo(map);
 
