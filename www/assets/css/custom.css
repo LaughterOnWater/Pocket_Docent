@@ -259,8 +259,11 @@ html, body {
 #go-home .ui-icon { background:  url(../../img/home-icon-mini.png) no-repeat; background-size: 17px 13px; }
 #go-animals .ui-icon { background:  url(../../img/bear-track-mini.png) no-repeat; background-size: 17px 15px;  }
 #go-map .ui-icon { background:  url(../../img/map-pin-icon-mini.png) no-repeat;  background-size: 11px 17px; }
+#stop .ui-icon { background:  url(../../img/stop-mini.png) no-repeat;  background-size: 60px 60px; }
+#back5 .ui-icon { background:  url(../../img/back5-mini.png) no-repeat;  background-size: 60px 60px; }
+#go-home-audio-map .ui-icon { background:  url(../../img/home-icon-mini-audio-map.png) no-repeat;  background-size: 60px 60px; }
+#start-over .ui-icon { background:  url(../../img/start-over-mini.png) no-repeat;  background-size: 60px 60px; }
 #locate .ui-icon { background: url(images/locate.png) no-repeat;  background-size: 18px 18px; }
-
 .img-radius {
 	border: 2px solid white;
 	border-radius: 10px;
@@ -329,8 +332,30 @@ html, body {
 }
 
 .floaty-list {
-
+	width: 47%;
+	float: left;
 }
+
+.directions-action {
+	width: 47%;
+	float: right;
+}
+
+.directions-action #selected_from {
+	background: url(../../img/play.png) no-repeat center ;
+	margin: 0;
+}
+
+.directions-action #selected_from .ui-btn-inner {
+	text-align: center !important;
+	height: 268px;
+	padding: 3em 0;
+}
+
+.directions-action #selected_from .ui-btn-inner .ui-btn-text {
+	margin: 0 auto;
+}
+
 
 .floaty-list .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, 
 .floaty-list .ui-li-static.ui-li-has-thumb {
@@ -352,3 +377,52 @@ html, body {
 	clear: both;
 }
 
+.imgctr{
+	display: inline-block;
+	height: 100%
+	vertical-align: middle;
+	float: left;
+	padding-right: 1em;
+}
+
+#directions h3 {
+	margin: 0;
+}
+
+#directions .smallish {
+	font-size: 10px;
+	margin: 0;
+	font-style: italic;
+}
+
+
+#directions .ui-content {
+	margin: 0;
+}
+
+#directions .ui-listview-inset {
+    margin: .1em 0;
+}
+
+#directions .nav-bhz .ui-btn .ui-icon {
+	height: 60px !important;
+	width: 60px !important;
+}
+
+#directions .ui-header .ui-btn-icon-top .ui-icon, 
+#directions .ui-footer .ui-btn-icon-top .ui-icon, 
+#directions .ui-mini.ui-btn-icon-top .ui-icon, 
+#directions .ui-mini .ui-btn-icon-top .ui-icon {
+    top: 10px;
+}
+
+#directions .ui-btn-icon-top .ui-btn-inner .ui-icon, 
+#directions .ui-btn-icon-bottom .ui-btn-inner .ui-icon {
+    left: 41%;
+    margin-left: -9px;
+    position: absolute;
+}
+
+.nav-audiomap .nav-bhz .ui-btn .ui-btn-inner {
+    padding-top: 80px !important;
+}
