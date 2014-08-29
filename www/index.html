@@ -7,6 +7,8 @@
         <script src="js/jquery-1.9.1.js"></script>
         <script src="js/jquery.mobile-1.3.2.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
+    <script src='js/fastclick.js'></script>
+    <script src="js/update-plugin.js"></script>
     <script type="text/javascript">
 		var $container = $('#container');
 		// initialize
@@ -53,15 +55,12 @@
           <div class="item h2"><div class="item-inner dark-blue"><br>
             <a href="map.htm" rel="external">Map<br>
           <img src="img/compass-img.png" width="61" height="61" alt="Maps"></a> </div></div>
-          <div class="item h1"><div class="item-inner dark-green"><a href="events.htm" rel="external">Events<br>
-<img src="img/calendar-icon.png" width="60" height="60" alt="Events"></a> </div></div>
-          <div class="item w2"><div class="item-inner dark-indigo"><a href="./animals.htm" rel="external">Animals<br>
+          <div class="item w2 h2"><div class="item-inner dark-indigo"><a href="./animals.htm" rel="external"><br>
+            Animals<br>
           <img src="img/eagle.png" width="61" height="40" alt="Bald Eagle">&nbsp;&nbsp;&nbsp;<img src="img/tree_frog.png" width="61" height="44" alt="Tree Frog"></a></div></div>
           <div class="item">
             <div class="item-inner dark-yellow"><a href="#faq">FAQ<br>
           <img src="img/faq-icon.png" width="60" height="60" alt="FAQ"></a> </div></div>
-          <div class="item"><div class="item-inner goldenrod"><a href="news.htm" rel="external">News<br>
-          <img src="img/news-icon.png" width="61" height="49" alt="News"> </a></div></div>
           <div class="item h2">
             <div class="item-inner dark-magenta"><br>
               <a href="#rules">Rules<br>
@@ -71,13 +70,6 @@
           <div class="item w2">
             <div class="item-inner dark-orange"><a href="venues.htm" rel="external">Places<br>
           <img src="img/exhibit-icon.png" width="61" height="54" alt="Exhibits"></a></div></div>
-          <div class="item h2">
-            <div class="item-inner electricblue"><a href="audio_map.htm" rel="external"><br>
-            Audio<br>
-            Map
-            <br>
-          <img src="img/audio-icon.png" width="61" height="59" alt="Exhibits"></a></div></div>
-         
         </div>
       </div>
             </div>
@@ -137,14 +129,33 @@
               <div class="rounded-rect">
                 <h1><img src="img/bear.png" width="61" height="39" alt="hours"> About </h1>
                 <div class="rounded-rect-inner">
+                  <div data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="false">
+                      <h3>Our Mission</h3>
+                      <p>Our mission is to help the community understand our place in and reliance upon natural systems through interpretive education and the use of Georgia's native wildlife. </p>
+                    </div>
+                    <div data-role="collapsible">
+                      <h3>Funding</h3>
+                      <p>Bear Hollow relies heavily upon donations and the commitment of many volunteers. If you are interested in volunteering or helping the zoo in any way, please contact us! bearhollowzoo@gmail.com</p>
+                    </div>
+                    <div data-role="collapsible">
+                      <h3>About the Zoo</h3>
+                      <p>Bear Hollow is a unique part of Memorial Park - a facility of the Athens-Clark County Department of Leisure Services. Since it's creation in the late 1940's, the zoo has undergone many changes having started as a private collection of wild animals, which had been donated to the Athens zoo. Currently, the zoo contains only non-releasable native wildlife housed in natural habitat exhibits. The zoo is always growing and changing thanks to community support through volunteers and donations,yet it always remains committed to conservation through the education of its visitors. By educating the public, by allowing even one person to forge a lasting connection with an animal, Bear Hollow helps motivate people to protect wildlife and the habitats that they depend upon.</p>
+                    </div>
+                    <div data-role="collapsible">
+                      <h3>About this App</h3>
+                      <p>I call this app "Pocket Docent". <em>A docent is an official, vetted and trained volunteer who   explains or teaches about exhibits in a zoo, museum or public garden   setting. </em>They also give general directions to offices, gift shops,   restrooms and parking lots, etc. </p>
+                      <p>I think of this app as a digital docent &mdash; an app that can answer general questions visitors may have about our animals, zoo hours and the grounds. </p>
+                      <p>I prefer the term <em>"Pocket Docent"</em> because it's less sterile or clinical-sounding than "Digital Docent".   While some may think there are plenty of apps out there for <em>specific</em> zoos or public gardens, there are not. This is something relatively new in the   app arena. (Surprise!)</p>
+                      <p><em>This app would have been impossible without the help of the following:</em></p>
+                      <ul>
+                        <li>Sherrie Hines: She condensed all the animal information from many resources.</li>
+                        <li>Wade Sheldon: Most if not all of the animal photos are Wade's photography.</li>
+                      </ul>
+                    </div>
+
+                  </div>
                   <p>&nbsp;</p>
-                  <p><strong>About this App:</strong> I call this app "Pocket Docent". <em>A docent is an official, vetted and trained volunteer who   explains or teaches about exhibits in a zoo, museum or public garden   setting. </em>They also give general directions to offices, gift shops,   restrooms and parking lots, etc. </p>
-                  <p>I think of this app as a digital docent &mdash; an app that can answer general questions visitors may have about our animals, zoo hours and the grounds. </p>
-                  <p>I prefer the term <em>"Pocket Docent"</em> because it's less sterile or clinical-sounding than "Digital Docent".   While some may think there are plenty of apps out there for <em>specific</em> zoos or public gardens, there are not. This is something relatively new in the   app arena. (Surprise!)</p>
-                  <p><strong>The Zoo's  Mission: </strong>Our mission is to help the community understand our place in and reliance upon natural systems through interpretive education and the use of Georgia's native wildlife. </p>
-                  <p><strong>Description:</strong> Bear Hollow is a facility of the Athens-Clark County Department of Leisure Services. Since it's creation in the late 1940's, the zoo has undergone many changes having started as a private collection of wild animals, which had been donated to the Athens zoo. Currently, the zoo contains only non-releasable native wildlife housed in natural habitat exhibits. The zoo is always growing and changing thanks to community support through volunteers and donations,yet it always remains committed to conservation through the education of its visitors. By educating the public, by allowing even one person to forge a lasting connection with an animal, Bear Hollow helps motivate people to protect wildlife and the habitats that they depend upon.<br>
-                  </p>
-<p> <strong>Our Funding:</strong> Bear Hollow relies heavily upon donations and the commitment of many volunteers. If you are interested in volunteering or helping the zoo in any way, please contact us!</p>
 <p>&nbsp;</p>
                 </div>
               </div>
@@ -172,7 +183,7 @@
     <div class="rounded-rect-inner">
       <p><strong>General admissions to the zoo are <em>free</em> to the public!</strong></p>
       <p><strong>School Trips:</strong> There is a per-student fee for class trips, paid by the school system involved. Mauris sed consequat est. In   sem erat, eleifend sed sollicitudin ut, mattis eu quam. Vivamus a nisl   eleifend, convallis tellus ut, vestibulum sapien. Donec arcu erat,   rutrum ut eros sed, suscipit laoreet quam. Vestibulum ante ipsum primis   in faucibus orci luctus et ultrices posuere cubilia Curae; Donec   suscipit sollicitudin nisi non porttitor. Mauris sed euismod turpis.   Duis blandit enim vel magna tincidunt laoreet. Donec bibendum sem sed   orci dictum euismod. Donec auctor ligula nec rutrum posuere. Curabitur   vehicula libero lacinia, vestibulum magna quis, imperdiet massa. </p>
-      <p> <strong>Special Tours:</strong> Based on the size of your party, fees include... Cum sociis natoque penatibus et magnis dis parturient montes, nascetur   ridiculus mus. Nullam dictum tincidunt est non tincidunt. Suspendisse   consequat in mi a sagittis. Fusce eget lacinia nulla. Vestibulum   tristique id risus nec varius. Morbi imperdiet suscipit tortor, molestie   mollis mauris convallis ac. Cras vitae risus porta, sagittis nunc ac,   sagittis neque. Donec varius risus at pellentesque porttitor. Aenean   molestie imperdiet dictum. Vestibulum commodo lacinia semper. Duis   lacinia tortor posuere tellus pulvinar, quis hendrerit eros elementum.   Maecenas nisl neque, fermentum nec congue at, rutrum in enim.   Suspendisse cursus eleifend pulvinar. </p>
+      <p> <strong>Special Tours:</strong> We have  programs for schools and educators. Available programs include Georgia Woods, Animal ABC's, Good Pets and Bad Pets, Survival of the Fittest, and Global Reducing, Reusing and Recycling. Educators may learn more on-line from our <a rel="external" href="http://www.athensclarkecounty.com/DocumentCenter/View/17931" target="_blank">Educator's Guide to Booking a Program at Bear Hollow Zoo</a>.</p>
     </div>
   </div>
 </div>
@@ -202,22 +213,41 @@
                 <div class="div-widget">
                     <span>Learn a little bit about why we do what we do at the zoo...</span>
                     <div data-role="collapsible-set">
-                        <div data-role="collapsible">
-                            <h1>How can I volunteer?</h1>
-                            <div class="div-widget">Get in touch with...</div>
-                        </div>
-                        <div data-role="collapsible">
-                            <h1>Why don't the eagles fly away?</h1>
-                            <div class="div-widget">
-                                <span>The eagles have been accidentally hit by cars and have lost too much of their wings to be able to fly. We are honored to host them as ambassadors of our natural environment so that our visitors can learn more about how animals like eagles play a part in Georgia's wilderness.</span>
-                            </div>
-                        </div>
-                        <div data-role="collapsible">
-                            <h1>Where is the restroom?</h1>
-                            <div class="div-widget">
-                                <span>The restroom is outside the zoo at the front of Memorial Park's public pool...</span>
-                            </div>
-                        </div>
+                      <div data-role="collapsible" data-collapsed="false">
+                        <h3>How can I volunteer?</h3>
+                        <p>Get in touch with <a href="#contact">Jenny Kvapil</a>. Use the contact information provided on the <a href="#contact">contact page</a>.  Volunteer opportunities include Animal Care, Docent, General Volunteer, and Trail Guide. Volunteers  go through a lot of training before they begin helping out. While you don't have to be an adult to become a volunteer, any underage volunteers must be accompanied by a parent or legal guardian while performing their duties. There are many kinds of volunteers. Call or email Jenny to find out how you can start soon!</p>
+                      </div>
+                      <div data-role="collapsible">
+                        <h3>Why don't the eagles fly away?</h3>
+                        <p>Most of our large birds of prey (raptors) have been victims of accidents that have somehow damaged a wing or an eye. Both eagles have wing damage, so they cannot fly to hunt. We are honored to host them as ambassadors of our natural environment so that our visitors can learn more about how animals like eagles play a part in Georgia's wilderness.</p>
+                      </div>
+                      <div data-role="collapsible">
+                        <h3>Where is the restroom?</h3>
+                        <p>The restroom is outside the zoo at the front of Memorial Park's public pool. There is also a restroom to the left of the large parking lot near the playground. Click the <a rel="external" href="map.htm">&quot;map&quot; button</a> to the bottom right for more information.</p>
+                      </div>
+                      <div data-role="collapsible">
+                        <h3>How can I have a Zoo Birthday Party?</h3>
+                        <p>Make your next celebration a wild affair! Our three-hour zoo parties include use of our Zoo Operations Building, a custom zoo tour and an   educational animal program with an animal encounter.       </p>
+                        <p>Parties are available:</p>
+                        <ul>
+                          <li>Saturdays: 10:00 a.m. - 1:00 p.m. and 2:00 - 5:00 p.m.   </li>
+                          <li>Sundays:    2:00   - 5:00 p.m.<br>
+
+                          </li>
+                        </ul>
+                        <p>Please note that due to space limitations and Zoo Summer Camp, zoo parties are not available during the months of June and July.    Also, please book early as spaces fill up quickly!</p>
+                        <p>Reservations must be made at least 3 weeks prior to   the date of your party and are taken on a first-come, first-served basis.</p>
+                        <p><strong>Basic Party Package &mdash; $75</strong><br>Includes use of the party room for three hours with tables and chairs and an educational zoo tour and program for the group.</p>
+                        <p><strong>Deluxe Party Package &mdash; $125</strong><br>
+                          Includes basic package plus an animal-shaped specialty cake of your choice (serves 20-25), table decorations,   plates, cups and party favors for each child.</p>
+                        <p>There is a maximum of   <u>30 participants</u>   per party.    Please invite no more than 30 guests, including children and adults.</p>
+                        <p><a href="#contact">Contact Bear Hollow Zoo</a> about Birthday Parties.<br>
+                        </p>
+                      </div>
+                      <div data-role="collapsible">
+                        <h3>What's all this other activity around the Zoo?</h3>
+                        <p>Bear Hollow Zoo is part of Memorial Park. Memorial Park also has a <a href="http://www.athensclarkecounty.com/1454/Pool-Season" target="_blank">public pool</a>, the <a href="http://www.athensclarkecounty.com/642/Athens-Creative-Theatre" target="_blank">Athens Creative Theater</a>, and nature trails, picnic areas, a playground, a public dog park, grills, and all sorts of programming. <a href="http://www.athensclarkecounty.com/Facilities/Facility/Details/12" target="_blank">Check it out here</a>.</p>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -277,8 +307,8 @@
                 No dogs or other pets.</strong><br>
                 Runners and dogs scare our prey animals.<br>
                 Please help us keep our inhabitants content.</p>
-                <p>Quisque rutrum lacinia purus, ut tristique arcu ornare id. Phasellus   posuere nisl rhoncus urna porta elementum. Aenean tempor augue arcu,   quis consectetur nisl aliquam eu. Suspendisse dictum justo magna, quis   pretium leo euismod nec. </p>
-                <p>Nunc tristique imperdiet rutrum. Curabitur suscipit mollis eros, a   suscipit turpis luctus at. Ut id sem massa. Class aptent taciti sociosqu   ad litora torquent per conubia nostra, per inceptos himenaeos. Donec eu   eros commodo, aliquam libero eu, porttitor leo. </p>
+                <p>Shoes and shirts must be worn in the zoo.</p>
+                
                 <p>Thank you!</p>
                 <p>&nbsp; </p>
 </div>            </div>
@@ -312,18 +342,7 @@
       <p>(706) 613-3616      </p>
       <p><strong>Email</strong><br>
       <a href="mailto:bearhollowzoo@gmail.com">bearhollowzoo@gmail.com</a>      </p>
-      <div class="rounded-rect-inner">
-        <ul>
-          <li>Etiam sit amet ligula tempor diam <a href="#">blandit porttitor</a>. </li>
-          <li>Nam enim lorem,   pretium quis augue eget, <a href="#">euismod suscipit magna</a>. </li>
-          <li>Nunc vitae urna non   dolor viverra porta sed <a href="#">vitae felis</a>.</li>
-          <li>Nunc rutrum <a href="#">pharetra turpis</a> dictum   dictum. </li>
-          <li>Curabitur consequat <a href="#">libero in ullamcorper</a> laoreet. </li>
-          <li>Suspendisse   et eros id <a href="#">diam tempus lobortis</a>.</li>
-          <li> In quis tellus eu enim <a href="#">consectetur   commodo</a> vel sit amet lectus.</li>
-        </ul>
-      </div>
-    </div>
+</div>
             </div>
             	<div data-role="footer" class="nav-bhz" data-position="fixed" data-theme="a" data-tap-toggle="false">
 		<div data-role="navbar" class="nav-bhz" data-grid="b">

@@ -426,3 +426,8 @@ html, body {
 .nav-audiomap .nav-bhz .ui-btn .ui-btn-inner {
     padding-top: 80px !important;
 }
+
+.imgCentered {
+	display:block;
+    margin:auto;
+}

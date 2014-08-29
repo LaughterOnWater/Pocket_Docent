@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title><!-- TemplateBeginEditable name="Title" -->American Alligator<!-- TemplateEndEditable --></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
+        <script src="../js/jquery-1.9.1.js"></script>
+        <script src="../js/jquery.mobile-1.3.2.min.js"></script>
+    <script src='../js/fastclick.js'></script>
+    <script type="text/javascript">
+		// var $container = $('#container');
+		// initialize
+		// $container.masonry({
+		//  columnWidth: 100,
+		//  itemSelector: '.item'
+		//});
+		document.addEventListener("deviceready", onDeviceReady, false);
+ 
+		function onDeviceReady() {
+		document.addEventListener("backbutton", handleBackButton, true);
+		}
+		 
+		function handleBackButton() {
+		console.log("back clicked");
+		window.history.back();
+		}    
+		
+		
+	</script>
+        <link href="../assets/css/jquery.mobile.structure-1.3.2.css" rel="stylesheet" type="text/css">
+        <link href="../themes/bearhollowzoo_styles.min.css" rel="stylesheet" type="text/css">
+        </head>
+
+<body>
+<div data-role="page" id="home" data-theme="c" data-title="Pocket Docent Home">
+            <div data-role="header" data-position="fixed" data-theme="c" data-tap-toggle="false">
+<h1><!-- TemplateBeginEditable name="Animal Name" -->American Alligator<!-- TemplateEndEditable --></h1>
+<a data-role="button" data-icon="back" data-rel="back" id="go-back" data-theme="c">Back</a></div><div data-role="content"><!-- TemplateBeginEditable name="Image" --><img class="imgCentered" width="251" height="168" src="/Pocket_Docent/assets/images/alligator.jpg" alt="Virginia opossum"><!-- TemplateEndEditable --><!-- TemplateBeginEditable name="Intro" -->
+<h2>Alligators in Athens</h2>
+<p>They don't normally live this far north, so you're not likely to see them in the wilds of Athens, GA. However they are a native species of southern Georgia. Be sure to visit Okefenokee Swamp to learn more about alligators! You can learn more than the casual observer by clicking the buttons below...</p>
+<!-- TemplateEndEditable -->
+  <div data-role="collapsible-set">
+<div data-role="collapsible"><h2>Taxonomy</h2>
+  <!-- TemplateBeginEditable name="Taxonomy" -->
+  <table class="taxonomy" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+      <th width="79">Order</th>
+      <td width="217" valign="top">Crocodylia</td>
+    </tr>
+    <tr>
+      <th width="79">Family</th>
+      <td width="217" valign="top">Alligatoridae</td>
+    </tr>
+    <tr>
+      <th width="79">Genus</th>
+      <td width="217" valign="top"><em>Alligator</em></td>
+    </tr>
+    <tr>
+      <th width="79">Species</th>
+      <td width="217" valign="top"><em>mississippiensis</em></td>
+    </tr>
+  </table>
+  <!-- TemplateEndEditable --></div>
+<div data-role="collapsible"><h2>Diet</h2>
+  <!-- TemplateBeginEditable name="Diet" -->
+  <ul>
+    <li>In the wild, alligators are apex  predators who will consume virtually any animal they can catch limited by their  own size.&nbsp; Alligators have even been seen  with whole deer carcasses. &nbsp;</li>
+    <li>In captivity, their main diet is a mix  of fish, large rats and gator chow. </li>
+  </ul>
+  <!-- TemplateEndEditable --></div>
+<div data-role="collapsible"><h2>Range and  Habitat</h2>
+  <!-- TemplateBeginEditable name="Range" --> <img width="169" height="222" src="/Pocket_Docent/assets/images/alligator-range-map.gif" align="right" hspace="12" alt="range map: eastern US">
+  <ul>
+    <li>Alligators  occur on the Atlantic Coast of North America from Florida through coastal North  Carolina, and along the Gulf Coast into Texas. Alligators are restricted to the  Coastal Plain, which includes the Central Savannah River Area of Georgia and  South Carolina. </li>
+    <li>Alligators  live in swampy areas, rivers, streams, lakes and ponds. Females and juveniles  occasionally use seasonal wetlands, such as&nbsp;Carolina Bays. Although they are  primarily freshwater animals, alligators will also venture into brackish salt  water. </li>
+  </ul>
+  <!-- TemplateEndEditable --></div>
+<div data-role="collapsible"><h2>Physical Features</h2>
+  <!-- TemplateBeginEditable name="Features" -->
+  <ul>
+    <li>Males can weigh 1000 lbs and average  10&mdash;15 ft long.&nbsp; Females grow to a max of  9.8 ft.</li>
+  </ul>
+  <!-- TemplateEndEditable --></div>
+<div data-role="collapsible">
+  <h2>Life Span</h2>
+  <!-- TemplateBeginEditable name="LifeSpan" -->
+  <ul>
+    <li>Alligators  are long-lived animals whose life spans can exceed 60 years.&nbsp; </li>
+    <li>They generally can live 30-50 years in the wild and  60 &ndash; 80 years in captivity</li>
+  </ul>
+  <!-- TemplateEndEditable --></div>
+<div data-role="collapsible"><h2>Reproduction</h2>
+  <!-- TemplateBeginEditable name="Reproduction" -->
+  <ul>
+    <li>Alligators are active  year-round, but they are most active in the warmer months in Georgia and South  Carolina. With the start of their breeding season in May, males  &quot;bellow&quot; to females and other males in the area. Alligator courtship  is complex and involves a variety of vocalizations, head-slapping on the  water&rsquo;s surface, body posturing, snout and back rubbing, bubble blowing, and  pheromone (scent) signals. By June, pairs have mated, and females begin  building mound nests out of marsh reeds or other vegetation. This rotting  vegetation helps warm the eggs during incubation.</li>
+    <li>Sometime during late June to  mid-July, females lay between 20 and 60 eggs. The hard-shelled, white eggs are  about 3 inches long and resemble goose eggs. The mother defends the nest  against predators throughout the incubation period, approximately 65 days. When  the eggs are ready to hatch, the mother alligator digs into the nest mound,  opens any eggs that have not hatched, and carries the young down to the water.  Females sometimes aggressively defend their young for more than a year.</li>
+  </ul>
+  <!-- TemplateEndEditable --></div>
+<div data-role="collapsible"><h2>Social Behavior</h2>
+  <!-- TemplateBeginEditable name="Social" -->
+  <ul>
+    <li>Large male  alligators are solitary, territorial animals. The largest males and females  will defend prime territory. Smaller alligators can often be found in large  numbers in close proximity to each other, because smaller alligators have a  higher tolerance of other alligators within a similar size class. </li>
+  </ul>
+  <!-- TemplateEndEditable --></div>
+  <div data-role="collapsible"><h2>Conservation</h2>
+  <!-- TemplateBeginEditable name="Conservation" -->
+  <ul>
+    <li>They are a species of least concern  after recovering from their previously endangered status.<strong><u></u></strong></li>
+    <li>Alligators are a rare example of an  animal that was not only saved from extinction but is now actually thriving in  its natural habitat in the wetlands of the Southeastern United States.&nbsp; Hunting and habitat loss had decimated the  alligator populations, and in 1967 they were listed as endangered <strong><u></u></strong></li>
+    <li>Unfortunately, irresponsible pet owners  often either accidentally or intentionally release pet snakes they no longer  want into wetlands where they compete with native predators. Burmese Pythons  are now a serious threat to Alligators and other native species in Florida.</li>
+    <li>The American alligator is listed as  threatened on the U.S. Endangered Species List because it is very similar in  appearance to the American crocodile, which is endangered, and hunters are  likely to confuse the two species.&nbsp;  Hunting is allowed in some states, but it is heavily controlled.&nbsp; The greatest threat is currently destruction  of habitat; this includes water management systems and increased levels of  mercury and dioxins in the water.</li>
+  </ul>
+  <!-- TemplateEndEditable --></div>
+<div data-role="collapsible"><h2>&nbsp;Interpretive Information</h2>
+  <!-- TemplateBeginEditable name="Interpretation" -->
+  <ul>
+    <li>Alligators and their relatives are the last of the living reptiles  that were closely related to dinosaurs, and their closest modern kin are birds.</li>
+    <li>There is only one other alligator species, the Chinese alligator.</li>
+    <li>Alligators and crocodiles are related. However, alligators have  rounded snouts, while most crocodile species have longer, pointed snouts. Also,  crocodiles occur only in tropical and subtropical areas (only south Florida in  the United States), while alligators live in somewhat colder climates.</li>
+    <li>Being ectotherms, alligators do not need to eat much &ndash; a 100-lb  dog will eat more in a year than an 800-lb alligator.</li>
+    <li>Alligators have fairly poor eyesight. They have a &ldquo;nictitating  membrane&rdquo; to protect their eyes so that they can see underwater. Alligators  hear with ears that are located behind their eyes and are very sensitive to  vibrations in the water.</li>
+    <li>On hot  summer days they can sometimes be seen basking with their mouths open. This is  a cooling mechanism essentially equivalent to a dog panting. </li>
+    <li>&nbsp;Ecologically, alligators are important predators and create important  habitat for other wildlife by digging holes that hold water during droughts. </li>
+  </ul>
+  <!-- TemplateEndEditable --></div>
+<div data-role="collapsible">
+  <h2>Bear Hollow&rsquo;s <!-- TemplateBeginEditable name="BHZ Animal List" -->Alligators<!-- TemplateEndEditable --></h2>
+  <!-- TemplateBeginEditable name="Animal Roster" -->
+  <ul>
+    <li>Female: Mayzie</li>
+    <ul>
+      <li>Mayzie came to Bear Hollow Zoo in March  of 2009 from the Savannah River Ecology Lab.<strong><u></u></strong></li>
+    </ul>
+    <li>Maude (female) - deceased late 2013 from  an eye infection.</li>
+  </ul>
+  <!-- TemplateEndEditable --></div>
+<div data-role="collapsible"><h2>Credits and References</h2>
+  <!-- TemplateBeginEditable name="Credits" -->
+  <ul>
+    <li><em>Photo &copy; Wade Sheldon</em></li>
+    <li>http://srelherp.uga.edu/alligators/allmis.htm</li>
+    <li>http://www.defenders.org/american-alligator/basic-facts</li>
+    <li> http://srelherp.uga.edu/alligators/allmis.htm</li>
+    <li>http://www.nps.gov/ever/naturescience/burmesepythonsintro.htm</li>
+    <li>http://nationalzoo.si.edu/animals/reptilesamphibians/facts/factsheets/americanalligator.cfm</li>
+    <li>http://srelherp.uga.edu/alligators/allmis.htm</li>
+    <li> http://srelherp.uga.edu/alligators/allmis.htm</li>
+  </ul>
+  <!-- TemplateEndEditable --></div>
+ </div>
+</div>
+<div data-role="footer" class="nav-bhz" data-position="fixed" data-theme="c" data-tap-toggle="false">
+		<div data-role="navbar" class="nav-bhz" data-grid="b">
+		<ul>
+			<li><a href="../index.html" id="go-home" data-icon="custom" rel="external" data-transition="slide" >Home</a></li>
+			<li><a href="../animals.htm" rel="external" id="go-animals" data-icon="custom" data-transition="slide">Animals</a></li>
+			<li><a href="../map.htm" rel="external" id="go-map" data-icon="custom" data-transition="slide">Map</a></li>
+		</ul>
+		</div><!-- /navbar -->
+  </div>
+</div>
+</body>
+</html>
