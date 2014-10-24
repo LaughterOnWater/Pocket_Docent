@@ -150,7 +150,7 @@ var LayerNineteen = new L.LayerGroup();
 		LayerSixteen.addLayer(marker_entrance);
 
 		var marker_beaver_deck =  L.marker([33.92681, -83.3872], {icon: animalPin});
-		marker_beaver_deck.bindPopup("<h3>Beaver Deck</h3><p>Best view of the Beavers<br />Learn more about <a href=\"animals.htm#beavers\" rel=\"external\">Beavers!</a></p>");
+		marker_beaver_deck.bindPopup("<h3>Beaver Deck</h3><p>Best view of the Beavers<br />Learn more about <a href=\"north-american-beaver.html\" rel=\"external\">Beavers!</a></p>");
 		LayerSeventeen.addLayer(marker_beaver_deck);
 
 		var marker_parking_b =  L.marker([33.92765, -83.3855], {icon: parkingPin});
@@ -175,7 +175,7 @@ var LayerNineteen = new L.LayerGroup();
 
 
 		var marker_gator_slider_deck =  L.marker([33.92669, -83.38705], {icon: animalPin});
-		marker_gator_slider_deck.bindPopup("<h3>Alligators, Yellow Slider</h3><p>Learn more about <a href=\"animals.htm#alligators\" rel=\"external\">Alligators</a>!<br /><em>or</em><br />Learn more about <a href=\"animals.html#sliders\" rel=\"external\">Yellow Sliders</a>!</p>");
+		marker_gator_slider_deck.bindPopup("<h3>Alligators, Yellow Slider</h3><p>Learn more about <a href=\"animals.htm#alligators\" rel=\"external\">Alligators</a>!</p>");
 		LayerEighteen.addLayer(marker_gator_slider_deck);
 
 		var marker_gator_night_house =  L.marker([33.92657, -83.38708], {icon: buildingPin});
@@ -187,15 +187,15 @@ var LayerNineteen = new L.LayerGroup();
 		LayerNineteen.addLayer(marker_gator_enclosure);
 
 		var marker_barred_owl =  L.marker([33.92669, -83.3869], {icon: animalPin});
-		marker_barred_owl.bindPopup("<h3>Barred Owl</h3><p>Learn more about <a href=\"animals.htm#barred_owls\" rel=\"external\">Barred Owls</a></p>");
+		marker_barred_owl.bindPopup("<h3>Barred Owl</h3><p>Learn more about <a href=\"barred-owl.html\" rel=\"external\">Barred Owls</a></p>");
 		LayerEighteen.addLayer(marker_barred_owl);
 
 		var marker_barn_owl =  L.marker([33.92665, -83.38666], {icon: animalPin});
-		marker_barn_owl.bindPopup("<h3>Barn Owl</h3><p>Learn more about <a href=\"animals.htm#barn_owls\" rel=\"external\">Barn Owls</a></p>");
+		marker_barn_owl.bindPopup("<h3>Barn Owl</h3><p>Learn more about <a href=\"barn-owl.html\" rel=\"external\">Barn Owls</a></p>");
 		LayerEighteen.addLayer(marker_barn_owl);
 
 		var marker_deer_turkey =  L.marker([33.92653, -83.38718], {icon: animalPin});
-		marker_deer_turkey.bindPopup("<h3>Deer & Turkey View</h3><p>Best view of the Deer and Turkeys<br />Learn more about <a href=\"animals.htm#deer\" rel=\"external\">Deer</a>.<br />or<br />Learn more about <a href=\"animals.htm#turkeys\" rel=\"external\">Turkeys</a></p>");
+		marker_deer_turkey.bindPopup("<h3>Deer & Turkey View</h3><p>Best view of the Deer and Turkeys<br />Learn more about <a href=\"white-tailed-deer.html\" rel=\"external\">Deer</a>.<br />or<br />Learn more about <a href=\"animals.htm#turkeys\" rel=\"external\">Turkeys</a></p>");
 		LayerEighteen.addLayer(marker_deer_turkey);
 
 		var marker_deer_turkey_enclosure =  L.marker([33.92641, -83.38752], {icon: mainPin});
@@ -203,7 +203,7 @@ var LayerNineteen = new L.LayerGroup();
 		LayerNineteen.addLayer(marker_deer_turkey_enclosure);
 
 		var marker_vultures =  L.marker([33.92648, -83.38671], {icon: animalPin});
-		marker_vultures.bindPopup("<h3>Vultures</h3><p>Learn more about <a href=\"animals.htm#black_vultures\" rel=\"external\">Black Vultures!</a><br /><em>or</em><br /></p><p><a href=\"animals.htm#turkey_vultures\" rel=\"external\">Turkey Vultures!</a></p>");
+		marker_vultures.bindPopup("<h3>Vultures</h3><p>Learn more about <a href=\"black-vulture.html\" rel=\"external\">Black Vultures!</a></p>");
 		LayerEighteen.addLayer(marker_vultures);
 
 		var marker_red_tailed_hawk =  L.marker([33.9262, -83.38663], {icon: animalPin});
